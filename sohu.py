@@ -19,7 +19,7 @@ def remove_emoji(desstr,restr=''):
     except re.error:
         co = re.compile(u'[\uD800-\uDBFF][\uDC00-\uDFFF]')
     return co.sub(restr, desstr)
-db = MySQLdb.connect("rm-wz992d32df6c8t3u5242.mysql.rds.aliyuncs.com", "maiya", "P--!jathJhk1UbE3FthiYNmOQJW+XHeX", "news", charset='utf8' )
+db = MySQLdb.connect("127.0.0.1", "root", "123456", "news", charset='utf8' )
 cursor = db.cursor()
 
 t = time.time()
